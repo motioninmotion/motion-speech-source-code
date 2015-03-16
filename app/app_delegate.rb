@@ -1,13 +1,9 @@
 class AppDelegate
   def application(application, didFinishLaunchingWithOptions:launchOptions)
-    rootViewController = UIViewController.alloc.init
-    rootViewController.title = 'ReadToMe'
-    rootViewController.view.backgroundColor = UIColor.whiteColor
-
-    navigationController = UINavigationController.alloc.initWithRootViewController(rootViewController)
+    # Motion::Speech::Speaker.speak Reading.new("Hello World", "Welcome to the best app ever"), rate: 0.2, pitch: 0.5, volume: 0.8
 
     @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
-    @window.rootViewController = navigationController
+    @window.rootViewController = ReadingsViewController.new
     @window.makeKeyAndVisible
 
     true

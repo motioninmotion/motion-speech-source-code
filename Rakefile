@@ -11,4 +11,5 @@ end
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'ReadToMe'
+  app.provisioning_profile = ENV["PROVISIONING_PROFILE"]
 end
