@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     motion-speech (0.1.1)
-    rake (10.4.2)
+    rake (12.3.1)
 
 PLATFORMS
   ruby
@@ -10,3 +10,6 @@ PLATFORMS
 DEPENDENCIES
   motion-speech
   rake
+
+BUNDLED WITH
+   1.16.2
