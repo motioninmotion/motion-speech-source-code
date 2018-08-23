@@ -36,7 +36,7 @@ class ReadingsViewController < UIViewController
     @stop_button.addTarget(self, action: 'stop_button_tapped:', forControlEvents: UIControlEventTouchUpInside)
   end
 
-  def play_button_tapped(sender)
+  def play_button_tapped(_)
     if @speaker && @speaker.paused?
       @speaker.resume
     else
@@ -45,13 +45,13 @@ class ReadingsViewController < UIViewController
     end
   end
 
-  def pause_button_tapped(sender)
+  def pause_button_tapped(_)
     if @speaker
       @speaker.pause :immediate
     end
   end
 
-  def stop_button_tapped(sender)
+  def stop_button_tapped(_)
     if @speaker
       @speaker.stop :immediate
     end
