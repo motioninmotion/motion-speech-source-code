@@ -30,6 +30,7 @@ class ReadingsViewController < UIViewController
   end
 
   def viewWillAppear(animated)
+    super
     @play_button.addTarget(self, action: 'play_button_tapped:', forControlEvents: UIControlEventTouchUpInside)
     @pause_button.addTarget(self, action: 'pause_button_tapped:', forControlEvents: UIControlEventTouchUpInside)
     @stop_button.addTarget(self, action: 'stop_button_tapped:', forControlEvents: UIControlEventTouchUpInside)
